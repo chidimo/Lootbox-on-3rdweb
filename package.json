@@ -3,14 +3,20 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy:1": "node --experimental-specifier-resolution=node scripts/1-create-bundle-module.js",
+    "deploy:2": "node --experimental-specifier-resolution=node scripts/2-mint-bundle-nfts.js",
+    "deploy:3": "node --experimental-specifier-resolution=node scripts/3-create-pack-module.js",
+    "deploy:4": "node --experimental-specifier-resolution=node scripts/4-create-pack-from-bundle.js",
+    "deploy:5": "node --experimental-specifier-resolution=node scripts/5-deposit-link.js",
+    "deploy:6": "node --experimental-specifier-resolution=node scripts/6-open-pack.js"
   },
   "dependencies": {
-    "@3rdweb/sdk": "^1.36.2",
+    "@3rdweb/sdk": "^1.37.0",
     "axios": "^0.25.0",
-    "dotenv": "^14.2.0",
+    "dotenv": "^14.3.2",
     "ethers": "^5.5.3",
-    "next": "^12.0.8",
+    "next": "^12.0.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "tiny-invariant": "^1.2.0"
