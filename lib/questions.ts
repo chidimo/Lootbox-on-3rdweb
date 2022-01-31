@@ -7,11 +7,10 @@ export type Question = {
 
 const quizQuestions: Question[] = [
   {
-    questionText: "What do the initials DB in Aston Martin DB11 stand for?",
-    image:
-      "https://images.unsplash.com/photo-1642201855395-1c8b44e6e42b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+    questionText: "How many coins are there in this picture?",
+    image: "https://images.unsplash.com/photo-1642483160501-a15ef5069431?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=quantitatives-io-yoaDWBZJRcM-unsplash.jpg",
     answers: [
-      "Trick question: nothing!",
+      "Trick question: Just 2!",
       "David Brown",
       "Drive Better",
       "Diane Blue",
@@ -20,14 +19,13 @@ const quizQuestions: Question[] = [
   },
   {
     questionText: "Which car brand is this logo for?",
-    image: "https://www.carlogos.org/logo/Lexus-symbol-640x480.jpg",
+    image: "https://images.unsplash.com/photo-1641784219669-88a6401031dd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=quantitatives-io-kuDDku4EzC4-unsplash.jpg",
     answers: ["Lamborghini", "Lada", "Lotus", "Lexus"],
     correctAnswerIndex: 3,
   },
   {
     questionText: "Where in the UK is the MINI plant?",
-    image:
-      "https://images.unsplash.com/photo-1591439346018-9d5df732ab7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80",
+    image: "https://images.unsplash.com/photo-1641784219669-88a6401031dd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=quantitatives-io-kuDDku4EzC4-unsplash.jpg",
     answers: ["Oxford", "Cambridge", "London", "Edinburgh"],
     correctAnswerIndex: 0,
   },

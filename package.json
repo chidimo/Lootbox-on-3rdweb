@@ -12,6 +12,8 @@
     "deploy:6": "node --experimental-specifier-resolution=node scripts/6-open-pack.js"
   },
   "dependencies": {
+    "@3rdweb/hooks": "^1.9.2",
+    "@3rdweb/react": "^1.9.3",
     "@3rdweb/sdk": "^1.37.0",
     "axios": "^0.25.0",
     "dotenv": "^14.3.2",
@@ -19,6 +21,7 @@
     "next": "^12.0.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-hot-toast": "^2.2.0",
     "tiny-invariant": "^1.2.0"
   },
   "devDependencies": {
