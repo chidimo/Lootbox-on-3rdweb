@@ -1,8 +1,9 @@
 import { ethers } from "ethers";
-import { sdk, packModuleAddress } from "./helpers.js";
+import { packAddress } from "../constants.js";
+import { sdk } from "./helpers.js";
 
 async function main() {
-  const packModule = sdk.getPackModule(packModuleAddress);
+  const packModule = sdk.getPackModule(packAddress);
 
   console.log("Depositing link...");
 
@@ -13,7 +14,7 @@ async function main() {
   console.log("Deposited!");
 
   const balance = await packModule.getLinkBalance();
-  console.log('balance', balance);
+  console.log("balance", balance);
 }
 
 try {

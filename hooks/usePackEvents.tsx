@@ -1,7 +1,7 @@
 import { ethers } from "ethers";
 import type { ContractInterface } from "ethers";
+import { packAddress } from "../constants";
 import { useEffect } from "react";
-import { packAddress } from "../lib/contractAddresses";
 import packABI from "../utils/PackABI.json";
 import { useWeb3 } from "@3rdweb/hooks";
 import { toast } from "react-hot-toast";

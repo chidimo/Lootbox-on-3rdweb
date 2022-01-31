@@ -1,10 +1,11 @@
 import { readFileSync } from "fs";
-import { sdk, bundleModuleAddress, packModuleAddress } from "./helpers.js";
+import { bundleAddress, packAddress } from "../constants.js";
+import { sdk } from "./helpers.js";
 
 async function main() {
-  const bundleModule = sdk.getBundleModule(bundleModuleAddress);
+  const bundleModule = sdk.getBundleModule(bundleAddress);
 
-  const packModule = sdk.getPackModule(packModuleAddress);
+  const packModule = sdk.getPackModule(packAddress);
 
   console.log("Getting all NFTs from bundle...");
   const nftsInBundle = await bundleModule.getAll();
@@ -14,7 +15,7 @@ async function main() {
 
   console.log("Creating a pack containing the NFTs from bundle...");
   const created = await packModule.create({
-    assetContract: bundleModuleAddress,
+    assetContract: bundleAddress,
     metadata: {
       name: "Rare coins Pack!",
       image: readFileSync("./assets/lootbox-pack-cover.jpg"),

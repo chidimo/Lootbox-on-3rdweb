@@ -1,8 +1,9 @@
 import { readFileSync } from "fs";
-import { sdk, bundleModuleAddress } from "./helpers";
+import { bundleAddress } from "../constants";
+import { sdk } from "./helpers";
 
 async function main() {
-  const bundleModule = sdk.getBundleModule(bundleModuleAddress);
+  const bundleModule = sdk.getBundleModule(bundleAddress);
   console.log("Creating NFT batch...");
 
   const created = await bundleModule.createAndMintBatch([

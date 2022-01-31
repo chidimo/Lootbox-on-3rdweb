@@ -1,7 +1,8 @@
-import { sdk, packModuleAddress } from "./helpers.js";
+import { sdk } from "./helpers.js";
+import { packAddress } from "../constants";
 
 async function main() {
-  const packModule = sdk.getPackModule(packModuleAddress);
+  const packModule = sdk.getPackModule(packAddress);
 
   console.log("Opening the pack...");
   const opened = await packModule.open("0");

@@ -1,7 +1,7 @@
 import quizQuestions from "../../lib/questions";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { ethers, BigNumber } from "ethers";
-import { packAddress } from "../../lib/contractAddresses";
+import { packAddress } from "../../constants";
 import { ThirdwebSDK } from "@3rdweb/sdk";
 
 export type CheckAnswerPayload = {

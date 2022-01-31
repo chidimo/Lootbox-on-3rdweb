@@ -2,7 +2,7 @@ import { useWeb3 } from "@3rdweb/hooks";
 import { ThirdwebSDK } from "@3rdweb/sdk";
 import type { PackMetadataWithBalance, BundleMetadata } from "@3rdweb/sdk";
 import { useEffect, useState } from "react";
-import { packAddress, bundleAddress } from "../lib/contractAddresses";
+import { packAddress, bundleAddress } from "../constants";
 import NFT from "../components/nft";
 import OpenButton from "../components/open-button";
 
