@@ -58,7 +58,7 @@ export default async function Open(
   try {
     address = ethers.utils.verifyMessage(body.message, body.signedMessage);
   } catch (err) {
-    req.status(400).json({
+    res.status(400).json({
       kind: "error",
       error: `Unable to verify message: ${err}`,
     });
